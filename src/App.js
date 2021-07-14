@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const demo = (num) => {
+    console.log(num);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
