@@ -6,7 +6,6 @@
     "browser": true,
     "commonjs": true
   },
-
   // パーサー
   "parser": "babel-eslint",
   // jsx を使います
@@ -24,19 +23,18 @@
       "version": "detect"
     }
   },
-  "plugins": ["react-hooks", "react", "babel-eslint"],
+  "plugins": ["react-hooks", "react"],
   // 基本的にルールは recommended に従う
   // prettier は配列の最後尾に書く
   "extends": [
     "eslint:recommended",
-    "plugin:babel-eslint/eslint-recommended",
-    "plugin:babel-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "prettier"
   ],
   "rules": {
     // TypeScirpt なので prop-types は要らない
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }

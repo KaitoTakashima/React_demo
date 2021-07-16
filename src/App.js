@@ -2,9 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const demo = (num) => {
-    console.log(num);
+  const demo = (sample) => {
+    alert(sample);
   };
+  demo('aaa');
 
   return (
     <div className="App">
@@ -17,8 +18,7 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Learn React
         </a>
       </header>
